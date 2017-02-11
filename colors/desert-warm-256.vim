@@ -39,7 +39,7 @@ if version > 580
 endif
 let g:colors_name='desert-warm-256'
 
-exec 'source ' . expand('<sfile>:p:h') . '/rgb_colors'
+exec 'source ' . fnameescape(expand('<sfile>:p:h')) . '/rgb_colors'
 
 if has('gui_running') || &t_Co == 88 || &t_Co == 256
     " functions {{{
